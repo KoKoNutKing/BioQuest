@@ -1,0 +1,16 @@
+{
+  "areas": [
+    {
+      "id": "tiny-forest",
+      "name": "Tiny Forest",
+      "description": "Côn trùng và động vật nhỏ",
+      "creature": { "name": "Bọ rùa", "preview": "ladybug" }
+    },
+    {
+      "id": "blue-ocean",
+      "name": "Blue Ocean",
+      "description": "Sinh vật thủy sinh",
+      "creature": null
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #172e24;
+  background: #f3f6ed;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 3px solid #246c4a;
+  outline-offset: 4px;
+}
+
+.shell {
+  max-width: 58rem;
+  margin-inline: auto;
+  padding: 1.5rem clamp(1rem, 5vw, 3rem) 3rem;
+}
+
+.brand {
+  border-bottom: 1px solid #c7d5c1;
+  padding-bottom: 1rem;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+main {
+  padding-top: 1.5rem;
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.1;
+}
+
+.area-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.area-card {
+  display: grid;
+  align-content: start;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid #a4c3a6;
+  border-radius: 1rem;
+  background: #e0efda;
+  text-align: left;
+}
+
+button.area-card:hover {
+  background: #d0e7c8;
+}
+
+.area-card strong {
+  font-size: 1.65rem;
+}
+
+.area-card.unavailable {
+  border-color: #b8cfdb;
+  background: #e8f1f5;
+}
+
+.area-status {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.back-button,
+.action-button {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid #9bb89d;
+  border-radius: 0.5rem;
+  background: #fff;
+  font-weight: 600;
+}
+
+.action-button {
+  border-color: #225c40;
+  color: #fff;
+  background: #225c40;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.location {
+  margin: 1.5rem 0 0.25rem;
+  color: #3d6451;
+  font-weight: 650;
+}
+
+.instructions {
+  margin-block: 0 1rem;
+}
+
+.viewer-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.viewer-toolbar .instructions {
+  flex: 1 1 24rem;
+  margin: 0;
+}
+
+.viewer {
+  height: clamp(16rem, 55vh, 32rem);
+  overflow: hidden;
+  border: 1px solid #a4c3a6;
+  border-radius: 1rem;
+  background: radial-gradient(ellipse, #f9fcf7, #d0e6cd);
+}
+
+.creature-map-viewer {
+  height: clamp(17rem, min(58vh, 100vw), 32rem);
+}
+
+.creature-map-viewer:focus-within {
+  outline: 3px solid #246c4a;
+  outline-offset: 3px;
+}
+
+.creature-map-viewer canvas,
+.assembly-viewer canvas {
+  cursor: grab;
+}
+
+.creature-map-viewer canvas:active,
+.assembly-viewer canvas:active {
+  cursor: grabbing;
+}
+
+.assembly-viewer {
+  height: clamp(17rem, min(48vh, 100vw), 27rem);
+  touch-action: none;
+}
+
+.assembly-status {
+  margin-block: 0.75rem;
+  font-weight: 650;
+}
+
+.assembly-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.quick-fit {
+  margin-top: 0.75rem;
+}
+
+.quick-fit button:disabled {
+  border-color: #b6c9b2;
+  color: #456457;
+  background: #e3ecdf;
+}
+
+.creature-map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.creature-map-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.creature-map-legend span {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+}
+
+.notice {
+  padding-inline: 1rem;
+}
